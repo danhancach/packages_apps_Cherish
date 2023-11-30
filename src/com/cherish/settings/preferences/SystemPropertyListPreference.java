@@ -52,7 +52,7 @@ public class SystemPropertyListPreference extends ListPreference {
                 editor.putString(getKey(), value);
                 editor.apply();
                 SystemProperties.set(getKey(), value);
-                CherishUtils.showRestartDialog(context);
+                CherishUtils.showSystemRestartDialog(context);
                 return true;
             }
         });
